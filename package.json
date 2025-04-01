@@ -38,11 +38,13 @@
   "devDependencies": {
     "@microsoft/api-extractor": "^7.52.2",
     "@rslib/core": "^0.6.1",
-    "@ryoppippi/unplugin-typia": "^1.2.0",
+    "@ryoppippi/unplugin-typia": "^2.1.4",
+    "@samchon/openapi": "^3.2.3",
     "@types/node": "^22.13.14",
     "dprint": "^0.49.1",
     "rsbuild-plugin-publint": "^0.3.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "typia": "^8.1.1"
   },
   "peerDependencies": {
     "typescript": "*",

@@ -9,6 +9,7 @@ export default defineConfig({
     rspack: {
       externals: [
         { typescript: "commonjs typescript" },
+        "svelte/compiler",
       ],
     },
   },

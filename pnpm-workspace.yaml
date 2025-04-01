@@ -1,0 +1,4 @@
+ignoredBuiltDependencies:
+  - core-js
+onlyBuiltDependencies:
+  - dprint

@@ -20,10 +20,10 @@ importers:
         version: 0.6.2(@microsoft/api-extractor@7.52.3(@types/node@22.14.1))(typescript@5.8.3)
       '@ryoppippi/unplugin-typia':
         specifier: ^2.2.0
-        version: 2.2.0(rollup@4.34.1)(typescript@5.8.3)(typia@9.1.1(@samchon/openapi@3.3.0)(typescript@5.8.3))(vite@6.0.11(@types/node@22.14.1)(jiti@2.4.2)(terser@5.37.0))
+        version: 2.2.0(rollup@4.34.1)(typescript@5.8.3)(typia@9.1.1(@samchon/openapi@4.0.0)(typescript@5.8.3))(vite@6.0.11(@types/node@22.14.1)(jiti@2.4.2)(terser@5.37.0))
       '@samchon/openapi':
-        specifier: ^3.3.0
-        version: 3.3.0
+        specifier: ^4.0.0
+        version: 4.0.0
       '@types/node':
         specifier: ^22.14.1
         version: 22.14.1
@@ -38,7 +38,7 @@ importers:
         version: 5.8.3
       typia:
         specifier: ^9.1.1
-        version: 9.1.1(@samchon/openapi@3.3.0)(typescript@5.8.3)
+        version: 9.1.1(@samchon/openapi@4.0.0)(typescript@5.8.3)
 
 packages:
 
@@ -572,8 +572,8 @@ packages:
       vite:
         optional: true
 
-  '@samchon/openapi@3.3.0':
-    resolution: {integrity: sha512-f8HMS0PVAKTGR0TwgiBX4PKlZRPfdtH5fJbtpUth3fMUZmikjZ7CBey8gX7HZgY4n/aYHyNQKcf/W/E2267oYw==}
+  '@samchon/openapi@4.0.0':
+    resolution: {integrity: sha512-fzji+KTrLqb3rD6RZID7N1cTN7aDwd0KAq0fP4rl2p1dHEy3uybqS7bP9BjMWP10k0DvFaS+P+g8+a/PA0FyZw==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -1612,7 +1612,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@ryoppippi/unplugin-typia@2.2.0(rollup@4.34.1)(typescript@5.8.3)(typia@9.1.1(@samchon/openapi@3.3.0)(typescript@5.8.3))(vite@6.0.11(@types/node@22.14.1)(jiti@2.4.2)(terser@5.37.0))':
+  '@ryoppippi/unplugin-typia@2.2.0(rollup@4.34.1)(typescript@5.8.3)(typia@9.1.1(@samchon/openapi@4.0.0)(typescript@5.8.3))(vite@6.0.11(@types/node@22.14.1)(jiti@2.4.2)(terser@5.37.0))':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.34.1)
       consola: 3.4.2
@@ -1624,14 +1624,14 @@ snapshots:
       pkg-types: 2.1.0
       type-fest: 4.38.0
       typescript: 5.8.3
-      typia: 9.1.1(@samchon/openapi@3.3.0)(typescript@5.8.3)
+      typia: 9.1.1(@samchon/openapi@4.0.0)(typescript@5.8.3)
       unplugin: 2.3.2
     optionalDependencies:
       vite: 6.0.11(@types/node@22.14.1)(jiti@2.4.2)(terser@5.37.0)
     transitivePeerDependencies:
       - rollup
 
-  '@samchon/openapi@3.3.0': {}
+  '@samchon/openapi@4.0.0': {}
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -2187,9 +2187,9 @@ snapshots:
 
   typescript@5.8.3: {}
 
-  typia@9.1.1(@samchon/openapi@3.3.0)(typescript@5.8.3):
+  typia@9.1.1(@samchon/openapi@4.0.0)(typescript@5.8.3):
     dependencies:
-      '@samchon/openapi': 3.3.0
+      '@samchon/openapi': 4.0.0
       commander: 10.0.1
       comment-json: 4.2.5
       inquirer: 8.2.6

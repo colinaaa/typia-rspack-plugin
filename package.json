@@ -44,7 +44,7 @@
     "dprint": "^0.49.1",
     "rsbuild-plugin-publint": "^0.3.0",
     "typescript": "^5.8.3",
-    "typia": "^8.2.0"
+    "typia": "^9.1.1"
   },
   "peerDependencies": {
     "typescript": "*",

@@ -33,14 +33,14 @@
     "dev": "rslib build --watch"
   },
   "dependencies": {
-    "unplugin": "^2.3.4"
+    "unplugin": "^2.3.5"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.52.8",
-    "@rslib/core": "^0.8.0",
-    "@ryoppippi/unplugin-typia": "^2.6.3",
-    "@samchon/openapi": "^4.3.2",
-    "@types/node": "^22.15.21",
+    "@rslib/core": "^0.9.1",
+    "@ryoppippi/unplugin-typia": "^2.6.4",
+    "@samchon/openapi": "^4.3.3",
+    "@types/node": "^22.15.29",
     "dprint": "^0.50.0",
     "rsbuild-plugin-publint": "^0.3.2",
     "typescript": "^5.8.3",

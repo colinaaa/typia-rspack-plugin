@@ -37,20 +37,20 @@
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.52.8",
-    "@rslib/core": "^0.9.1",
-    "@ryoppippi/unplugin-typia": "^2.6.4",
-    "@samchon/openapi": "^4.3.3",
-    "@types/node": "^22.15.29",
-    "dprint": "^0.50.0",
+    "@rslib/core": "^0.10.4",
+    "@ryoppippi/unplugin-typia": "^2.6.5",
+    "@samchon/openapi": "^4.4.1",
+    "@types/node": "^22.16.0",
+    "dprint": "^0.50.1",
     "rsbuild-plugin-publint": "^0.3.2",
     "typescript": "^5.8.3",
-    "typia": "^9.3.1"
+    "typia": "^9.4.0"
   },
   "peerDependencies": {
     "typescript": "*",
     "typia": "*"
   },
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.12.4",
   "engines": {
     "node": ">=18"
   }

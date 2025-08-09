@@ -43,4 +43,3 @@ jobs:
         uses: JS-DevTools/npm-publish@v3
         with:
           token: empty
-

@@ -1,4 +1,18 @@
+enableGlobalVirtualStore: true
+
+enablePrePostScripts: false
+
+ignorePatchFailures: false
+
 ignoredBuiltDependencies:
   - core-js
+  - esbuild
+
 onlyBuiltDependencies:
   - dprint
+
+optimisticRepeatInstall: true
+
+resolutionMode: lowest-direct
+
+verifyDepsBeforeRun: install

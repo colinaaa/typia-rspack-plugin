@@ -36,11 +36,11 @@
     "unplugin": "^2.3.10"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.52.15",
-    "@rslib/core": "^0.15.0",
+    "@microsoft/api-extractor": "^7.54.0",
+    "@rslib/core": "^0.17.0",
     "@ryoppippi/unplugin-typia": "^2.6.5",
-    "@samchon/openapi": "^4.7.1",
-    "@types/node": "^22.18.8",
+    "@samchon/openapi": "^4.7.2",
+    "@types/node": "^22.19.0",
     "dprint": "^0.50.2",
     "rsbuild-plugin-publint": "^0.3.3",
     "typescript": "^5.9.3",
@@ -50,7 +50,7 @@
     "typescript": "*",
     "typia": "*"
   },
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.20.0",
   "engines": {
     "node": ">=18"
   }

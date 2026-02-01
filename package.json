@@ -40,7 +40,7 @@
     "@rslib/core": "^0.17.0",
     "@ryoppippi/unplugin-typia": "^2.6.5",
     "@samchon/openapi": "^4.7.2",
-    "@types/node": "^22.19.0",
+    "@types/node": "^24.10.9",
     "dprint": "^0.50.2",
     "rsbuild-plugin-publint": "^0.3.3",
     "typescript": "^5.9.3",

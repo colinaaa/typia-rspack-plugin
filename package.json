@@ -33,16 +33,16 @@
     "dev": "rslib build --watch"
   },
   "dependencies": {
-    "unplugin": "^2.3.10"
+    "unplugin": "^2.3.11"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.54.0",
-    "@rslib/core": "^0.17.0",
+    "@microsoft/api-extractor": "^7.56.3",
+    "@rslib/core": "^0.19.6",
     "@ryoppippi/unplugin-typia": "^2.6.5",
     "@samchon/openapi": "^4.7.2",
-    "@types/node": "^24.10.9",
-    "dprint": "^0.50.2",
-    "rsbuild-plugin-publint": "^0.3.3",
+    "@types/node": "^24.10.13",
+    "dprint": "^0.51.1",
+    "rsbuild-plugin-publint": "^0.3.4",
     "typescript": "^5.9.3",
     "typia": "^9.7.2"
   },
@@ -50,7 +50,7 @@
     "typescript": "*",
     "typia": "*"
   },
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.29.3",
   "engines": {
     "node": ">=18"
   }

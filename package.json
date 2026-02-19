@@ -39,7 +39,7 @@
     "@microsoft/api-extractor": "^7.56.3",
     "@rslib/core": "^0.19.6",
     "@ryoppippi/unplugin-typia": "^2.6.5",
-    "@samchon/openapi": "^4.7.2",
+    "@samchon/openapi": "^6.0.1",
     "@types/node": "^24.10.13",
     "dprint": "^0.51.1",
     "rsbuild-plugin-publint": "^0.3.4",

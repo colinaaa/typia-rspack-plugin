@@ -22,8 +22,8 @@ importers:
         specifier: ^2.6.5
         version: 2.6.5(rollup@4.34.1)(typescript@5.9.3)(typia@11.0.3(typescript@5.9.3))(vite@6.0.11(@types/node@24.10.13)(jiti@2.6.1)(terser@5.37.0))
       '@samchon/openapi':
-        specifier: ^4.7.2
-        version: 4.7.2
+        specifier: ^6.0.1
+        version: 6.0.1
       '@types/node':
         specifier: ^24.10.13
         version: 24.10.13
@@ -638,9 +638,6 @@ packages:
         optional: true
       vite:
         optional: true
-
-  '@samchon/openapi@4.7.2':
-    resolution: {integrity: sha512-yj6kGWHtKK85wfJXrSmWqLWjfCd98SAvCTsVDlej2s7OfXXHqA4hmgPRNrAPIQRVi00xn26qL1PChjq1MhzlRQ==}
 
   '@samchon/openapi@6.0.1':
     resolution: {integrity: sha512-+nkznmCf/6YavoVkvWg60YoC0UbXY/oK9uMZReyrFcIcXecf+YoWmOLUg+TlgHi+h+6DPgRy6zRkZfiRd3uRnA==}
@@ -1724,8 +1721,6 @@ snapshots:
       vite: 6.0.11(@types/node@24.10.13)(jiti@2.6.1)(terser@5.37.0)
     transitivePeerDependencies:
       - rollup
-
-  '@samchon/openapi@4.7.2': {}
 
   '@samchon/openapi@6.0.1': {}
 

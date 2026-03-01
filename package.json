@@ -33,7 +33,7 @@
     "dev": "rslib build --watch"
   },
   "dependencies": {
-    "unplugin": "^2.3.11"
+    "unplugin": "^3.0.0"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.56.3",

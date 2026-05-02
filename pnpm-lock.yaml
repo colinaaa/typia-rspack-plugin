@@ -17,10 +17,10 @@ importers:
         version: 7.58.7(@types/node@24.12.2)
       '@rslib/core':
         specifier: ^0.21.3
-        version: 0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(core-js@3.47.0)(typescript@5.9.3)
+        version: 0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(core-js@3.47.0)(typescript@6.0.3)
       '@ryoppippi/unplugin-typia':
         specifier: ^2.6.5
-        version: 2.6.5(rollup@4.34.1)(typescript@5.9.3)(typia@12.0.2(typescript@5.9.3))(vite@6.0.11(@types/node@24.12.2)(jiti@2.6.1)(terser@5.37.0))
+        version: 2.6.5(rollup@4.34.1)(typescript@6.0.3)(typia@12.0.2(typescript@6.0.3))(vite@6.0.11(@types/node@24.12.2)(jiti@2.6.1)(terser@5.37.0))
       '@samchon/openapi':
         specifier: ^4.7.2
         version: 4.7.2
@@ -34,11 +34,11 @@ importers:
         specifier: ^0.3.4
         version: 0.3.4(@rsbuild/core@2.0.3(core-js@3.47.0))
       typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
+        specifier: ^6.0.3
+        version: 6.0.3
       typia:
         specifier: ^12.0.2
-        version: 12.0.2(typescript@5.9.3)
+        version: 12.0.2(typescript@6.0.3)
 
 packages:
 
@@ -1161,6 +1161,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   typia@12.0.2:
     resolution: {integrity: sha512-0RBUxrar8Hztee6gSdBPR1scDBJAPp3k0ut4C3H6ri8+D6nVnGmWvsrnl5fOxHdLDtCC/gxZ4rhp2ivf0jom+g==}
     hasBin: true
@@ -1550,13 +1555,13 @@ snapshots:
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
 
-  '@rslib/core@0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(core-js@3.47.0)(typescript@5.9.3)':
+  '@rslib/core@0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(core-js@3.47.0)(typescript@6.0.3)':
     dependencies:
       '@rsbuild/core': 2.0.3(core-js@3.47.0)
-      rsbuild-plugin-dts: 0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(@rsbuild/core@2.0.3(core-js@3.47.0))(typescript@5.9.3)
+      rsbuild-plugin-dts: 0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(@rsbuild/core@2.0.3(core-js@3.47.0))(typescript@6.0.3)
     optionalDependencies:
       '@microsoft/api-extractor': 7.58.7(@types/node@24.12.2)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
       - '@typescript/native-preview'
@@ -1654,7 +1659,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@ryoppippi/unplugin-typia@2.6.5(rollup@4.34.1)(typescript@5.9.3)(typia@12.0.2(typescript@5.9.3))(vite@6.0.11(@types/node@24.12.2)(jiti@2.6.1)(terser@5.37.0))':
+  '@ryoppippi/unplugin-typia@2.6.5(rollup@4.34.1)(typescript@6.0.3)(typia@12.0.2(typescript@6.0.3))(vite@6.0.11(@types/node@24.12.2)(jiti@2.6.1)(terser@5.37.0))':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.34.1)
       bun-only: 0.0.1
@@ -1666,8 +1671,8 @@ snapshots:
       pathe: 2.0.3
       pkg-types: 2.1.0
       type-fest: 4.38.0
-      typescript: 5.9.3
-      typia: 12.0.2(typescript@5.9.3)
+      typescript: 6.0.3
+      typia: 12.0.2(typescript@6.0.3)
       unplugin: 2.3.11
     optionalDependencies:
       vite: 6.0.11(@types/node@24.12.2)(jiti@2.6.1)(terser@5.37.0)
@@ -2123,13 +2128,13 @@ snapshots:
       fsevents: 2.3.3
     optional: true
 
-  rsbuild-plugin-dts@0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(@rsbuild/core@2.0.3(core-js@3.47.0))(typescript@5.9.3):
+  rsbuild-plugin-dts@0.21.3(@microsoft/api-extractor@7.58.7(@types/node@24.12.2))(@rsbuild/core@2.0.3(core-js@3.47.0))(typescript@6.0.3):
     dependencies:
       '@ast-grep/napi': 0.37.0
       '@rsbuild/core': 2.0.3(core-js@3.47.0)
     optionalDependencies:
       '@microsoft/api-extractor': 7.58.7(@types/node@24.12.2)
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   rsbuild-plugin-publint@0.3.4(@rsbuild/core@2.0.3(core-js@3.47.0)):
     dependencies:
@@ -2217,7 +2222,9 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  typia@12.0.2(typescript@5.9.3):
+  typescript@6.0.3: {}
+
+  typia@12.0.2(typescript@6.0.3):
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@typia/core': 12.0.2
@@ -2229,7 +2236,7 @@ snapshots:
       inquirer: 8.2.6
       package-manager-detector: 0.2.9
       randexp: 0.5.3
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   undici-types@7.16.0: {}
 

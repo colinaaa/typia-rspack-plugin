@@ -21,7 +21,13 @@ export function formatDiagnostic(diagnostic: ts.Diagnostic): string {
     return message;
   }
 
-  const position = diagnostic.file.getLineAndCharacterOfPosition(diagnostic.start);
+  let position: ts.LineAndCharacter;
+
+  try {
+    position = diagnostic.file.getLineAndCharacterOfPosition(diagnostic.start);
+  } catch {
+    return message;
+  }
 
   return `${diagnostic.file.fileName}:${position.line + 1}:${position.character + 1} - ${message}`;
 }

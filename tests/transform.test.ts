@@ -3,6 +3,7 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import ts from "typescript";
 import { formatDiagnostic, transformTypia } from "../src/transform";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -104,4 +105,22 @@ test("throws a readable error when tsconfig cannot be parsed", () => {
   } finally {
     rmSync(cwd, { force: true, recursive: true });
   }
+});
+
+test("formats diagnostics with message fallback when line lookup fails", () => {
+  const diagnostic: ts.Diagnostic = {
+    category: ts.DiagnosticCategory.Error,
+    code: 1005,
+    file: {
+      fileName: "C:/tmp/tsconfig.json",
+      getLineAndCharacterOfPosition() {
+        throw new Error("path separator mismatch");
+      },
+    } as unknown as ts.SourceFile,
+    length: 0,
+    messageText: "'}' expected.",
+    start: 0,
+  };
+
+  expect(formatDiagnostic(diagnostic)).toBe("'}' expected.");
 });

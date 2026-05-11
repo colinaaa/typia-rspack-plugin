@@ -38,7 +38,6 @@
     "@rspack/core": "^2.0.1",
     "@rslib/core": "^0.21.3",
     "@rstest/core": "^0.9.10",
-    "@samchon/openapi": "^4.7.2",
     "@types/node": "^24.12.2",
     "dprint": "^0.54.0",
     "rsbuild-plugin-publint": "^0.3.4",

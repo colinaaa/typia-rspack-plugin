@@ -22,9 +22,6 @@ importers:
       '@rstest/core':
         specifier: ^0.9.10
         version: 0.9.10(core-js@3.47.0)
-      '@samchon/openapi':
-        specifier: ^4.7.2
-        version: 4.7.2
       '@types/node':
         specifier: ^24.12.2
         version: 24.12.2
@@ -341,9 +338,6 @@ packages:
 
   '@rushstack/ts-command-line@5.3.9':
     resolution: {integrity: sha512-GIHqU+sRGQ3LGWAZu1O+9Yh++qwtyNIIGuNbcWHJjBTm2qRez0cwINUHZ+pQLR8UuzZDcMajrDaNbUYoaL/XtQ==}
-
-  '@samchon/openapi@4.7.2':
-    resolution: {integrity: sha512-yj6kGWHtKK85wfJXrSmWqLWjfCd98SAvCTsVDlej2s7OfXXHqA4hmgPRNrAPIQRVi00xn26qL1PChjq1MhzlRQ==}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -1046,8 +1040,6 @@ snapshots:
       string-argv: 0.3.2
     transitivePeerDependencies:
       - '@types/node'
-
-  '@samchon/openapi@4.7.2': {}
 
   '@standard-schema/spec@1.1.0': {}
 

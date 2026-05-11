@@ -30,23 +30,23 @@
   ],
   "scripts": {
     "build": "rslib build",
-    "dev": "rslib build --watch"
-  },
-  "dependencies": {
-    "unplugin": "^3.0.0"
+    "dev": "rslib build --watch",
+    "test": "pnpm build && rstest run"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.58.7",
+    "@rspack/core": "^2.0.1",
     "@rslib/core": "^0.21.3",
-    "@ryoppippi/unplugin-typia": "^2.6.5",
+    "@rstest/core": "^0.9.10",
     "@samchon/openapi": "^4.7.2",
     "@types/node": "^24.12.2",
     "dprint": "^0.54.0",
     "rsbuild-plugin-publint": "^0.3.4",
     "typescript": "^6.0.3",
-    "typia": "^12.0.2"
+    "typia": "^12.1.1"
   },
   "peerDependencies": {
+    "@rspack/core": "*",
     "typescript": "*",
     "typia": "*"
   },

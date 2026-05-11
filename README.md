@@ -13,9 +13,7 @@ A Rspack plugin for [typia](https://github.com/samchon/typia) - TypeScript trans
 
 ## Why
 
-This plugin is a lightweight alternative to using the full `unplugin-typia` package. While `unplugin-typia` supports multiple bundlers (Webpack, Vite, Rollup, etc.), this plugin is specifically designed for Rspack users. By only including the Rspack-specific code, we can significantly reduce the installation size and dependencies.
-
-If you're using Rspack as your bundler and typia for runtime type checking, this plugin provides the same functionality as `unplugin-typia` but with a smaller footprint.
+This plugin is a lightweight Rspack-specific Typia transformer. It wires a local Rspack loader that calls Typia's exported `typia/lib/transform` entry directly, without depending on `unplugin`.
 
 ## Usage
 
@@ -55,7 +53,21 @@ export default defineConfig({
 
 ## Options
 
-The plugin accepts all options supported by `@ryoppippi/unplugin-typia`. For detailed options, please refer to the [`unplugin-typia` documentation](https://github.com/ryoppippi/unplugin-typia).
+```typescript
+new TypiaRspackPlugin({
+  include: [/\.[cm]?[jt]sx?$/],
+  exclude: [/node_modules/],
+  enforce: "pre",
+  tsconfig: "tsconfig.json",
+  typia: {},
+});
+```
+
+- `include`: files to transform. Defaults to TypeScript and JavaScript files.
+- `exclude`: files to skip. Defaults to `node_modules`.
+- `enforce`: Rspack loader order, `"pre"` by default.
+- `tsconfig`: optional path to the TypeScript config used to create the transform program.
+- `typia`: options forwarded to Typia's transformer.
 
 ## Development
 

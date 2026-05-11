@@ -1,8 +1,19 @@
+packages:
+  - .
+
 enableGlobalVirtualStore: true
 
 enablePrePostScripts: false
 
 ignorePatchFailures: false
+
+packageExtensions:
+  "@typia/core@*":
+    peerDependencies:
+      typescript: "*"
+  "@typia/transform@*":
+    peerDependencies:
+      typescript: "*"
 
 ignoredBuiltDependencies:
   - core-js

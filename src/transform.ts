@@ -116,7 +116,13 @@ function getCompilerOptions(options: TransformOptions): ts.CompilerOptions {
     return cached;
   }
 
-  const config = ts.readConfigFile(tsconfigPath, ts.sys.readFile);
+  const configText = ts.sys.readFile(tsconfigPath);
+
+  if (configText == null) {
+    throw new Error(`Unable to read tsconfig file: ${tsconfigPath}`);
+  }
+
+  const config = ts.parseConfigFileTextToJson(tsconfigPath, configText);
 
   if (config.error != null) {
     throw new Error(formatDiagnostic(config.error));

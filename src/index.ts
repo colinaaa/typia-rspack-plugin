@@ -1,17 +1,32 @@
-import type { Options } from "@ryoppippi/unplugin-typia";
-import TypiaUnplugin from "@ryoppippi/unplugin-typia/rspack";
+import { fileURLToPath } from "node:url";
+import { DEFAULT_EXCLUDE, DEFAULT_INCLUDE, type LoaderOptions, type Options } from "./options.js";
 
 class TypiaRspackPlugin {
-  #plugin: ReturnType<typeof TypiaUnplugin>;
+  #options: Options;
 
-  constructor(options?: Options) {
-    this.#plugin = TypiaUnplugin(options);
+  constructor(options: Options = {}) {
+    this.#options = options;
   }
 
   apply(compiler: any): void {
-    this.#plugin.apply(compiler);
+    const options = this.#options;
+    const loaderOptions: LoaderOptions = {
+      tsconfig: options.tsconfig,
+      typia: options.typia,
+    };
+
+    compiler.options.module ??= {};
+    compiler.options.module.rules ??= [];
+    compiler.options.module.rules.push({
+      enforce: options.enforce ?? "pre",
+      exclude: options.exclude ?? DEFAULT_EXCLUDE,
+      loader: fileURLToPath(new URL("./loader.js", import.meta.url)),
+      options: loaderOptions,
+      test: options.include ?? DEFAULT_INCLUDE,
+    });
   }
 }
 
+export type { Options };
 export { TypiaRspackPlugin };
 export default TypiaRspackPlugin;

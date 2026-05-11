@@ -79,12 +79,11 @@ test("reports a Typia diagnostic when createIs misses its generic argument", () 
   expect(code).toContain("typia.createIs()");
 });
 
-test("throws a readable error when tsconfig cannot be parsed", () => {
+test("throws a readable error when tsconfig cannot be read", () => {
   const cwd = mkdtempSync(join(tmpdir(), "typia-rspack-transform-"));
   const id = resolve(cwd, "input.ts");
 
   writeFileSync(id, "import typia from \"typia\";\nexport const check = typia.createIs();\n");
-  writeFileSync(resolve(cwd, "tsconfig.json"), "{\n  \"compilerOptions\": {\n    \"strict\": true,\n  }\n");
 
   try {
     let thrown: unknown;
@@ -94,14 +93,15 @@ test("throws a readable error when tsconfig cannot be parsed", () => {
         cwd,
         id,
         source: readFileSync(id, "utf8"),
-        tsconfig: "tsconfig.json",
+        tsconfig: "missing-tsconfig.json",
       });
     } catch (error) {
       thrown = error;
     }
 
     expect(thrown).toBeInstanceOf(Error);
-    expect((thrown as Error).message).toContain("'}' expected.");
+    expect((thrown as Error).message).toContain("Unable to read tsconfig file:");
+    expect((thrown as Error).message).toContain("missing-tsconfig.json");
   } finally {
     rmSync(cwd, { force: true, recursive: true });
   }

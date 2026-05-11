@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.58.7",
+    "@rspack/core": "^2.0.1",
     "@rslib/core": "^0.21.3",
     "@rstest/core": "^0.9.10",
     "@samchon/openapi": "^4.7.2",
@@ -45,6 +46,7 @@
     "typia": "^12.1.1"
   },
   "peerDependencies": {
+    "@rspack/core": "*",
     "typescript": "*",
     "typia": "*"
   },

@@ -1,6 +1,6 @@
 import type { transform as typiaTransform } from "typia/lib/transform";
 
-type RuleCondition = string | RegExp | ((value: string) => boolean) | RuleCondition[];
+export type RuleCondition = string | RegExp | ((value: string) => boolean) | RuleCondition[];
 
 type TypiaOptions = Parameters<typeof typiaTransform>[1];
 

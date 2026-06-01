@@ -40,7 +40,7 @@
     "@rstest/core": "^0.9.10",
     "@types/node": "^24.12.2",
     "dprint": "^0.54.0",
-    "rsbuild-plugin-publint": "^0.3.4",
+    "rsbuild-plugin-publint": "^1.0.0",
     "typescript": "^6.0.3",
     "typia": "^12.1.1"
   },

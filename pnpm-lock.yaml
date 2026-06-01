@@ -29,8 +29,8 @@ importers:
         specifier: ^0.54.0
         version: 0.54.0
       rsbuild-plugin-publint:
-        specifier: ^0.3.4
-        version: 0.3.4(@rsbuild/core@2.0.3(core-js@3.47.0))
+        specifier: ^1.0.0
+        version: 1.0.0(@rsbuild/core@2.0.3(core-js@3.47.0))
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -615,8 +615,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  publint@0.3.17:
-    resolution: {integrity: sha512-Q3NLegA9XM6usW+dYQRG1g9uEHiYUzcCVBJDJ7yMcWRqVU9LYZUWdqbwMZfmTCFC5PZLQpLAmhvRcQRl3exqkw==}
+  publint@0.3.21:
+    resolution: {integrity: sha512-OqejcnMV6E9zel2oCrUOJEiiFkGiAAni0A6ibfQNh1k9Gu5z4F+Yso8lllam7AzmV6Do0vp7u3UpZNRBwuXaHQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -664,8 +664,9 @@ packages:
       typescript:
         optional: true
 
-  rsbuild-plugin-publint@0.3.4:
-    resolution: {integrity: sha512-0oIeQlTNRQoiyi2K5RT6C0+3q8J1HZEX66pkTtDAvmNNHiLf+YyBn2bx8S2w5T7MEVt323ULKoGV4rRROIOatQ==}
+  rsbuild-plugin-publint@1.0.0:
+    resolution: {integrity: sha512-QNu6zL0TOmFZfrCiKSmkw092jDhhPpiA1QYDRkvhkW1wDLowuVEYOqdV87Eo/I6geV0nuKKnCgLHT+Fevbz6pA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       '@rsbuild/core': ^1.0.0 || ^2.0.0-0
     peerDependenciesMeta:
@@ -1314,7 +1315,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  publint@0.3.17:
+  publint@0.3.21:
     dependencies:
       '@publint/pack': 0.1.4
       package-manager-detector: 1.6.0
@@ -1357,10 +1358,9 @@ snapshots:
       '@microsoft/api-extractor': 7.58.7(@types/node@24.12.2)
       typescript: 6.0.3
 
-  rsbuild-plugin-publint@0.3.4(@rsbuild/core@2.0.3(core-js@3.47.0)):
+  rsbuild-plugin-publint@1.0.0(@rsbuild/core@2.0.3(core-js@3.47.0)):
     dependencies:
-      picocolors: 1.1.1
-      publint: 0.3.17
+      publint: 0.3.21
     optionalDependencies:
       '@rsbuild/core': 2.0.3(core-js@3.47.0)
 

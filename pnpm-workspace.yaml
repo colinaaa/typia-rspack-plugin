@@ -1,8 +1,6 @@
 packages:
   - .
 
-enableGlobalVirtualStore: true
-
 enablePrePostScripts: false
 
 ignorePatchFailures: false

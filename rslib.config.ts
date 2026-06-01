@@ -6,7 +6,7 @@ export default defineConfig({
     {
       format: "esm",
       syntax: "es2023",
-      dts: { bundle: true },
+      dts: { bundle: true, isolated: true },
       source: {
         entry: {
           index: "./src/index.ts",

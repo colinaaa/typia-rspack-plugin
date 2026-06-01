@@ -39,5 +39,5 @@ export type Options = {
 
 export type LoaderOptions = Pick<Options, "tsconfig" | "typia">;
 
-export const DEFAULT_INCLUDE = [/\.[cm]?[jt]sx?$/];
-export const DEFAULT_EXCLUDE = [/node_modules/];
+export const DEFAULT_INCLUDE: readonly RegExp[] = [/\.[cm]?[jt]sx?$/];
+export const DEFAULT_EXCLUDE: readonly RegExp[] = [/node_modules/];

@@ -9,6 +9,7 @@
     "strict": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    "isolatedDeclarations": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "useDefineForClassFields": true,

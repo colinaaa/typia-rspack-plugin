@@ -15,12 +15,10 @@ packageExtensions:
     peerDependencies:
       typescript: "*"
 
-ignoredBuiltDependencies:
-  - core-js
-  - esbuild
-
-onlyBuiltDependencies:
-  - dprint
+allowBuilds:
+  core-js: false
+  dprint: true
+  esbuild: false
 
 optimisticRepeatInstall: true
 

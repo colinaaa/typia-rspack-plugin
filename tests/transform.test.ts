@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import ts from "typescript";
+import { TypiaRspackPlugin } from "../src/index";
 import { formatDiagnostic, transformTypia } from "../src/transform";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -123,4 +124,35 @@ test("formats diagnostics with message fallback when line lookup fails", () => {
   };
 
   expect(formatDiagnostic(diagnostic)).toBe("'}' expected.");
+});
+
+test("resolves relative string include paths against compiler context", () => {
+  const rules: Array<{ test?: unknown }> = [];
+  const fakeCompiler = {
+    context: "/projects/my-app",
+    options: { module: { rules } },
+  };
+
+  const plugin = new TypiaRspackPlugin({ include: "./src/validate.ts" });
+
+  plugin.apply(fakeCompiler as any);
+
+  expect(rules).toHaveLength(1);
+  expect(rules[0]!.test).toBe(resolve("/projects/my-app", "./src/validate.ts"));
+});
+
+test("preserves RegExp include without modification", () => {
+  const rules: Array<{ test?: unknown }> = [];
+  const fakeCompiler = {
+    context: "/projects/my-app",
+    options: { module: { rules } },
+  };
+  const pattern = /\.tsx?$/;
+
+  const plugin = new TypiaRspackPlugin({ include: pattern });
+
+  plugin.apply(fakeCompiler as any);
+
+  expect(rules).toHaveLength(1);
+  expect(rules[0]!.test).toBe(pattern);
 });

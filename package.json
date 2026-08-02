@@ -34,10 +34,10 @@
     "test": "pnpm build && rstest run"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.58.11",
-    "@rspack/core": "^2.1.4",
+    "@microsoft/api-extractor": "^7.58.12",
+    "@rspack/core": "^2.1.7",
     "@rslib/core": "^0.23.2",
-    "@rstest/core": "^0.11.2",
+    "@rstest/core": "^0.11.5",
     "@types/node": "^24.13.3",
     "dprint": "^0.55.2",
     "rsbuild-plugin-publint": "^1.0.0",
@@ -49,7 +49,7 @@
     "typescript": "*",
     "typia": "*"
   },
-  "packageManager": "pnpm@11.14.0+sha512.66c1ac4c7d4762d6d7dde44c7f3e5a73591ed0a0806e751d4ed32d4f004f25b2285a906b1fd8a9e3e621df3b4e2858bf88e50e0cf626bedbe977fe434a5caf85",
+  "packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c",
   "engines": {
     "node": ">=18"
   }

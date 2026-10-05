@@ -42,7 +42,7 @@
     "dprint": "^0.55.2",
     "rsbuild-plugin-publint": "^1.0.0",
     "typescript": "^6.0.3",
-    "typia": "^12.1.1"
+    "typia": "^15.1.0"
   },
   "peerDependencies": {
     "@rspack/core": "*",
